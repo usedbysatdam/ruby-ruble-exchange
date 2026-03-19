@@ -46,14 +46,22 @@ const Catalog = () => {
               <p className="text-xs text-muted-foreground">
                 Gamepass: {item.gamepassPrice.toLocaleString()} R$ (setelah tax 30%)
               </p>
-              <div className="mt-4">
+              <div className="mt-4 flex gap-2">
                 <a
-                  href="https://wa.me/"
+                  href={`https://wa.me/6281234567890?text=Halo, saya ingin beli ${item.robux} Robux`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full rounded-xl bg-primary py-2.5 text-center text-sm font-semibold text-primary-foreground transition-colors hover:bg-maroon-light"
+                  className="flex-1 rounded-xl bg-primary py-2.5 text-center text-sm font-semibold text-primary-foreground transition-colors hover:bg-maroon-light"
                 >
-                  Beli Sekarang
+                  WhatsApp
+                </a>
+                <a
+                  href="https://instagram.com/robuxstore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-xl border border-primary/30 bg-primary/10 py-2.5 text-center text-sm font-semibold text-foreground transition-colors hover:bg-primary/20"
+                >
+                  Instagram
                 </a>
               </div>
             </div>
